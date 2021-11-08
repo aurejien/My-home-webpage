@@ -1,12 +1,25 @@
-const keyAction = document.querySelector(".span-box-left");
+const ArrowLeftSpanLeft = document.querySelector(".sb-left");
+const ArrowLeftImg = document.querySelector(".sk-left")
 
-document.addEventListener("keypress", (e) => {
-    console.log(e.key);
-    
-    if (e.key == "a"){
-        keyAction.style.transform= "translateX(0)";     
+const ArrowRightSpanRight = document.querySelector(".sb-right");
+const ArrowRightImg = document.querySelector(".sk-right")
+
+document.addEventListener("keydown", (e) => {
+    if (e.key == "ArrowLeft"){
+        ArrowLeftSpanLeft.style.transform = "translateX(0)";
+        ArrowLeftImg.style.opacity = "0.5";     
     } else {
-        keyAction.style.transform= "translateX(-100vw)";   
+        ArrowLeftSpanLeft.style.transform = "translateX(-100vw)";
+        
+    };
+});
+
+document.addEventListener("keydown", (e) => {
+    if (e.key == "ArrowRight"){
+        ArrowRightSpanRight.style.transform = "translateX(0)";
+        ArrowRightImg.style.opacity = "0.5";     
+    } else {
+        ArrowRightSpanRight.style.transform = "translateX(100vw)"; 
         
     };
 });

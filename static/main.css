@@ -13,6 +13,7 @@
     color: var(--text-color);
     margin: 0;
     padding: 0;
+    overflow: hidden;
 
 }
 
@@ -52,32 +53,33 @@ body {
     z-index: 1;
     text-align: center;
 }
-.span-key-img {
-    background: url(../assets/icones/key-up-down.svg);
-    width: 50px;
-    height: 50px;
-    margin: 10px auto;
-}
 
-.sk-bottom, .sk-top {
-    background: url(../assets/icones/key-up-down.svg);
-}
-.sk-bottom {
-    transform: rotate(180deg);
-}
-
-.sk-left, .sk-right {
-    background: url(../assets/icones/key-left-right.svg);
-}
 /* *******************    ******************* */
-.span-box-left {
-    background-color: rgba(220, 20, 60, 0.658);
+.span-box {
     width: 100vw;
     height: 100vh;
     position: absolute;
     top: 0;
-    left: 0;
-    transform: translateX(-100vw);
+    
     transition: 1s ease-out;
     z-index: 2;
 }
+
+.sb-left {
+
+    background-color: rgba(220, 20, 60, 0.658);
+    left: 0;
+    transform: translateX(-100vw);
+}
+
+.sb-right {
+
+    background-color: rgba(20, 220, 97, 0.658);
+    right: 0;
+    transform: translateX(100vw);
+}
+
+
+
+
+

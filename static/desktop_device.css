@@ -25,7 +25,11 @@
 
     #span-top, #span-left, #span-bottom, #span-right {
         visibility: visible;
-        width: 300px;
+        width: auto;
+    }
+
+    #span-left, #span-right {
+        width: 100%;
     }
 
     #span-top a, #span-left a, #span-bottom a, #span-right a {
@@ -37,9 +41,8 @@
         transform: translateX(-50%);
     }
     #span-left {
-        left: calc(-150px + 3em);
-        top: 50%;
-        transform: translateY(-50%);
+        left: -46%;
+        top: 45%;
         transform:rotate(90deg);
     }
     #span-bottom {
@@ -48,11 +51,55 @@
     
     }
     #span-right {
-        right: calc(-150px + 3em);
-        top: 50%;
-        transform:translateY(-50%);
+        right: -46%;
+        top: 45%;
         transform:rotate(-90deg);
     }
     /* *******************    ******************* */
+    .span-key-img {
+        background: url(../assets/icones/key-up-down.svg);
+        width: 50px;
+        height: 50px;
+        margin: 10px auto;
+        opacity: 1;
+        transition: 0.3s ease;
+    }
+    
+    .sk-bottom, .sk-top {
+        background: url(../assets/icones/key-up-down.svg);
+    }
+    .sk-bottom {
+        transform: rotate(180deg);
+    }
+    
+    .sk-left, .sk-right {
+        background: url(../assets/icones/key-left-right.svg);
+    }
+    /* *******************    ******************* */
+    .span-box {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        
+        transition: 1s ease-out;
+        z-index: 2;
+    }
+    
+    .sb-left {
+    
+        background-color: rgba(220, 20, 60, 0.658);
+        left: 0;
+        transform: translateX(-100vw);
+    }
+    
+    .sb-right {
+    
+        background-color: rgba(20, 220, 97, 0.658);
+        right: 0;
+        transform: translateX(100vw);
+    }
+    
+    
 
 }
