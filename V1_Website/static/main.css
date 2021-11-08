@@ -1,0 +1,83 @@
+/* 
+    MAIN CSS
+*/
+:root {
+    --text-color : #fff;
+    --border-color : #fff;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-image: url(../assets/bg/background.jpeg);
+    background-color: rgb(51, 51, 51);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+/* *******************    ******************* */
+.box {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.logoHome {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.logo {
+    display: block;
+}
+/* *******************    ******************* */
+#span-top, #span-left, #span-bottom, #span-right,
+#span-top-t, #span-left-t, #span-bottom-t, #span-right-t,
+#span-top-m, #span-left-m, #span-bottom-m, #span-right-m {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+}
+.span-key-img {
+    background: url(../assets/icones/key-up-down.svg);
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+}
+
+.sk-bottom, .sk-top {
+    background: url(../assets/icones/key-up-down.svg);
+}
+.sk-bottom {
+    transform: rotate(180deg);
+}
+
+.sk-left, .sk-right {
+    background: url(../assets/icones/key-left-right.svg);
+}
+/* *******************    ******************* */
+.span-box-left {
+    background-color: rgba(220, 20, 60, 0.658);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100vw);
+    transition: 1s ease-out;
+    z-index: 2;
+}

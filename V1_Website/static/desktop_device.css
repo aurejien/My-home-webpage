@@ -1,0 +1,58 @@
+/* 
+    DESKTOP CSS
+*/
+
+@media screen and (min-width: 1024px){
+    body {
+        border: 1em solid var(--border-color);
+    }
+    /* *******************    ******************* */
+    .logo {
+        display: block;
+        font-size: 7em;
+        margin-bottom: -30px;
+        font-weight:500;
+    }
+    
+    .descr {
+        font-size: 1em;
+    }
+    /* *******************    ******************* */
+    #span-top-t, #span-left-t, #span-bottom-t, #span-right-t,
+    #span-top-m, #span-left-m, #span-bottom-m, #span-right-m {
+        visibility: hidden;
+    }
+
+    #span-top, #span-left, #span-bottom, #span-right {
+        visibility: visible;
+        width: 300px;
+    }
+
+    #span-top a, #span-left a, #span-bottom a, #span-right a {
+        font-size: 1em;
+    }
+
+    #span-top {
+        top: 0;
+        transform: translateX(-50%);
+    }
+    #span-left {
+        left: calc(-150px + 3em);
+        top: 50%;
+        transform: translateY(-50%);
+        transform:rotate(90deg);
+    }
+    #span-bottom {
+        bottom: 0;
+        transform: translateX(-50%);
+    
+    }
+    #span-right {
+        right: calc(-150px + 3em);
+        top: 50%;
+        transform:translateY(-50%);
+        transform:rotate(-90deg);
+    }
+    /* *******************    ******************* */
+
+}
