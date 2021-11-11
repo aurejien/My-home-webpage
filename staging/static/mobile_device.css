@@ -1,0 +1,56 @@
+/* 
+    MOBILE CSS
+*/
+
+@media screen and (max-width: 767px){
+    body {
+        border: 0.5em solid var(--border-color);
+    }
+    /* *******************    ******************* */
+    .logo {
+        display: block;
+        font-size: 3.5em;
+        font-weight:500;
+        margin-bottom: -10px;
+    }
+    
+    .descr {
+        font-weight: -100;
+        font-size: 0.70em;
+    }
+    /* *******************    ******************* */
+    #span-top, #span-left, #span-bottom, #span-right,
+    #span-top-t, #span-left-t, #span-bottom-t, #span-right-t {
+        visibility: hidden;
+    }
+
+    #span-top-m, #span-left-m, #span-bottom-m, #span-right-m {
+        visibility: visible;
+        width: auto;
+        margin: 1em;
+    }
+    
+    #span-top-m a, #span-left-m a, #span-bottom-m a, #span-right-m a {
+        font-size: 0.70em;
+    }
+
+    #span-top-m {
+        top: 0;
+        right:0;
+    }
+    #span-left-m {
+        top: 0;
+        left: 0;
+    }
+    #span-bottom-m {
+        left: 0;
+        bottom: 0;
+    
+    }
+    #span-right-m {
+        bottom: 0;
+        right: 0;
+    }
+    /* *******************    ******************* */
+
+}

@@ -1,0 +1,59 @@
+/* 
+    TABLET CSS
+*/
+
+@media screen and (min-width: 768px) and  (max-width: 1023px){
+    body {
+        border: 0.8em solid var(--border-color);
+    }
+    /* *******************    ******************* */
+    .logo {
+        display: block;
+        font-size: 5em;
+        margin-bottom: -25px;
+        font-weight:500;
+    }
+    
+    .descr {
+        font-weight: -100;
+        font-size: 0.90em;
+    }
+    /* *******************    ******************* */
+    #span-top, #span-left, #span-bottom, #span-right,
+    #span-top-m, #span-left-m, #span-bottom-m, #span-right-m {
+        visibility: hidden;
+    }
+
+    #span-top-t, #span-left-t, #span-bottom-t, #span-right-t {
+        visibility: hidden; /* visible */
+        width: 300px;
+    }
+    
+    #span-top-t a, #span-left-t a, #span-bottom-t a, #span-right-t a {
+        font-size: 0.90em;
+    }
+
+    #span-top-t {
+        top: 20px;
+        transform: translateX(-50%);
+    }
+    #span-left-t {
+        left: -110px;
+        top: 50%;
+        transform: translateY(-50%);
+        transform:rotate(90deg);
+    }
+    #span-bottom-t {
+        bottom: 25px;
+        transform: translateX(-50%);
+    
+    }
+    #span-right-t {
+        right: -110px;
+        top: 50%;
+        transform:translateY(-50%);
+        transform:rotate(-90deg);
+    }
+    /* *******************    ******************* */
+
+}
