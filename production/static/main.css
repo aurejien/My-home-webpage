@@ -1,26 +1,48 @@
 /* 
     MAIN CSS
 */
+
+@font-face {
+    font-family: "Bold";
+    src: url("../assets/font/ABold.ttf");
+}
+
+@font-face {
+    font-family: "Medium";
+    src: url("../assets/font/AMedium.ttf");
+}
+
+@font-face {
+    font-family: "Regular";
+    src: url("../assets/font/ARegular.ttf");
+}
+
+@font-face {
+    font-family: "Light";
+    src: url("../assets/font/ALight.ttf");
+}
+
 :root {
     --black : rgb(20, 20, 20);
     --white : rgb(255, 255, 255);
+
 }
 
 * {
     box-sizing: border-box;
-    font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
     text-decoration: none;
     color: var(--white);
     margin: 0;
     padding: 0;
     overflow: hidden;
-
+    cursor: not-allowed;
 }
 
 body {
     background-color: var(--black);
     width: 100%;
     height: 100vh;
+    font-family: "Light", sans-serif;
 }
 /* *******************    ******************* */
 .box {
@@ -30,4 +52,67 @@ body {
     position: relative;
 }
 
+.home_box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+/* ************ NAV BAR TOP ** */
+.logo, .nav_bar {
+    position: absolute;
+    top: var(--MRG);
+    overflow: visible;
+}
+
+.logo {
+    font-family: "Bold";
+}
+
+.nav_item {
+    display: inline;
+    margin: 0 var(--ITSpace);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+.nav_item:hover {
+    border-bottom: 1px solid var(--white);
+}
+
+/* ************ LOGO CENTER ** */
+.logo_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Bold";
+    overflow: visible;
+}
+
+.lt, .lc, .lb {
+    position: relative;
+}
+
+.lt {
+    left: -50%;
+}
+.lb {
+    right: -50%;
+}
+
+
+/* ************ FOOTER ** */
+.footer_left, .footer_right{
+    position: absolute;
+}
+
+
+.footer_right .icone {
+    display: inline;
+}
+
+.icone img {
+    margin: 0 var(--ITSpace);
+}
 

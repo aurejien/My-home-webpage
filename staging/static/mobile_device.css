@@ -4,22 +4,35 @@
 
 @media screen and (max-width: 767px){
     :root {
-        --MTB : 5%;
-        --MLR : 15%;
+        --MRG : 5%;
         --ITSpace : 5px;
     }
 
 /* ************ HOME ** */
     .home_box {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     .icone img {
         height: 15px;
     }
+
+    .logo {
+        top: var(--MRG);
+    }
+
+    .nav_bar {
+        top: 10%;
+    }
+
+    .logo, .nav_bar {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
 /* ************ FOOTER ** */
     .footer_left {
-        bottom: var(--MTB);
+        bottom: var(--MRG);
     }
     .footer_right {
         bottom: 10%;

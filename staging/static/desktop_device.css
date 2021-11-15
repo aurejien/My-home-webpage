@@ -4,8 +4,7 @@
 
 @media screen and (min-width: 1024px){
     :root {
-        --MTB : 5%;
-        --MLR : 15%;
+        --MRG : 5%;
         --ITSpace : 20px;
     }
 
@@ -18,17 +17,26 @@
         height: 20px;
     }
 
+
+    .logo {
+        left: var(--MRG);
+    }
+
+    .nav_bar {
+        right: var(--MRG);
+    }
+
 /* ************ FOOTER ** */
     .footer_left, .footer_right{
-        bottom: var(--MTB);
+        bottom: var(--MRG);
     }
 
     .footer_left {
-        left: var(--MLR);
+        left: var(--MRG);
     }
 
     .footer_right {
-        right: var(--MLR);
+        right: var(--MRG);
     }
 
 /* ************ LOGO CENTER ** */

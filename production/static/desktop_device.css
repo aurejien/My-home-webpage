@@ -3,5 +3,51 @@
 */
 
 @media screen and (min-width: 1024px){
+    :root {
+        --MRG : 5%;
+        --ITSpace : 20px;
+    }
+
+/* ************ HOME ** */
+    .home_box {
+        font-size: 1rem;
+    }
+
+    .icone img {
+        height: 20px;
+    }
+
+
+    .logo {
+        left: var(--MRG);
+    }
+
+    .nav_bar {
+        right: var(--MRG);
+    }
+
+/* ************ FOOTER ** */
+    .footer_left, .footer_right{
+        bottom: var(--MRG);
+    }
+
+    .footer_left {
+        left: var(--MRG);
+    }
+
+    .footer_right {
+        right: var(--MRG);
+    }
+
+/* ************ LOGO CENTER ** */
+    .logo_box{
+        font-size: 3rem;
+    }
+    .lt {
+        left: -50%;
+    }
+    .lb {
+        right: -50%;
+    }
 
 }

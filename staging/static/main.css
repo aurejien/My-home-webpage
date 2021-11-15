@@ -62,17 +62,12 @@ body {
 /* ************ NAV BAR TOP ** */
 .logo, .nav_bar {
     position: absolute;
-    top: var(--MTB);
+    top: var(--MRG);
     overflow: visible;
 }
 
 .logo {
-    left: var(--MLR);
     font-family: "Bold";
-}
-
-.nav_bar {
-    right: var(--MLR);
 }
 
 .nav_item {

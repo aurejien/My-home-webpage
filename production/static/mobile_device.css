@@ -3,5 +3,54 @@
 */
 
 @media screen and (max-width: 767px){
+    :root {
+        --MRG : 5%;
+        --ITSpace : 5px;
+    }
+
+/* ************ HOME ** */
+    .home_box {
+        font-size: 0.8rem;
+    }
+
+    .icone img {
+        height: 15px;
+    }
+
+    .logo {
+        top: var(--MRG);
+    }
+
+    .nav_bar {
+        top: 10%;
+    }
+
+    .logo, .nav_bar {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+/* ************ FOOTER ** */
+    .footer_left {
+        bottom: var(--MRG);
+    }
+    .footer_right {
+        bottom: 10%;
+    }
+
+    .footer_left, .footer_right {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+/* ************ LOGO CENTER ** */
+    .logo_box{
+        font-size: 2rem;
+    }
+    .lt {
+        left: -30%;
+    }
+    .lb {
+        right: -30%;
+    }
     
 }

@@ -3,5 +3,48 @@
 */
 
 @media screen and (min-width: 768px) and  (max-width: 1023px){
-    
+    :root {
+        --MRG : 5%;
+        --ITSpace : 10px;
+    }
+
+/* ************ HOME ** */
+    .home_box {
+        font-size: 0.8rem;
+    }
+
+    .icone img {
+        height: 15px;
+    }
+
+    .logo {
+        left: var(--MRG);
+    }
+
+    .nav_bar {
+        right: var(--MRG);
+    }
+/* ************ FOOTER ** */
+    .footer_left, .footer_right{
+        bottom: var(--MRG);
+    }
+
+    .footer_left {
+        left: var(--MRG);
+    }
+
+    .footer_right {
+        right: var(--MRG);
+    }
+
+/* ************ LOGO CENTER ** */
+    .logo_box{
+        font-size: 2.7rem;
+    }
+    .lt {
+        left: -40%;
+    }
+    .lb {
+        right: -40%;
+    }
 }
