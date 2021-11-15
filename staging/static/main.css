@@ -1,16 +1,37 @@
 /* 
     MAIN CSS
 */
+
+@font-face {
+    font-family: "Bold";
+    src: url("../assets/font/ABold.ttf");
+}
+
+@font-face {
+    font-family: "Medium";
+    src: url("../assets/font/AMedium.ttf");
+}
+
+@font-face {
+    font-family: "Regular";
+    src: url("../assets/font/ARegular.ttf");
+}
+
+@font-face {
+    font-family: "Light";
+    src: url("../assets/font/ALight.ttf");
+}
+
 :root {
-    --text-color : #fff;
-    --border-color : #fff;
+    --black : rgb(20, 20, 20);
+    --white : rgb(255, 255, 255);
+
 }
 
 * {
     box-sizing: border-box;
-    font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--white);
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -18,14 +39,10 @@
 }
 
 body {
-    background-image: url(../assets/bg/background.jpeg);
-    background-color: rgb(51, 51, 51);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: var(--black);
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    font-family: "Light", sans-serif;
 }
 /* *******************    ******************* */
 .box {
@@ -35,51 +52,73 @@ body {
     position: relative;
 }
 
-.logoHome {
+.home_box {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
 
+/* ************ NAV BAR TOP ** */
+.logo, .nav_bar {
+    position: absolute;
+    top: var(--MTB);
+    overflow: visible;
 }
 
 .logo {
-    display: block;
+    left: var(--MLR);
+    font-family: "Bold";
 }
-/* *******************    ******************* */
-#span-top, #span-left, #span-bottom, #span-right,
-#span-top-t, #span-left-t, #span-bottom-t, #span-right-t,
-#span-top-m, #span-left-m, #span-bottom-m, #span-right-m {
+
+.nav_bar {
+    right: var(--MLR);
+}
+
+.nav_item {
+    display: inline;
+    margin: 0 var(--ITSpace);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    cursor: not-allowed;
+}
+
+.nav_item:hover {
+    border-bottom: 1px solid var(--white);
+}
+
+/* ************ LOGO CENTER ** */
+.logo_box{
     position: absolute;
-    z-index: 1;
-    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Bold";
+    overflow: visible;
 }
 
-/* *******************    ******************* */
-.span-box {
-    width: 100vw;
-    height: 100vh;
+.lt, .lc, .lb {
+    position: relative;
+}
+
+.lt {
+    left: -50%;
+}
+.lb {
+    right: -50%;
+}
+
+
+/* ************ FOOTER ** */
+.footer_left, .footer_right{
     position: absolute;
-    top: 0;
-    
-    transition: 1s ease-out;
-    z-index: 2;
-}
-
-.sb-left {
-
-    background-color: rgba(220, 20, 60, 0.658);
-    left: 0;
-    transform: translateX(-100vw);
-}
-
-.sb-right {
-
-    background-color: rgba(20, 220, 97, 0.658);
-    right: 0;
-    transform: translateX(100vw);
 }
 
 
+.footer_right .icone {
+    display: inline;
+}
 
-
+.icone img {
+    margin: 0 var(--ITSpace);
+}
 

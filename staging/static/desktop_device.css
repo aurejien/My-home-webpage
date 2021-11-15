@@ -3,103 +3,43 @@
 */
 
 @media screen and (min-width: 1024px){
-    body {
-        border: 1em solid var(--border-color);
-    }
-    /* *******************    ******************* */
-    .logo {
-        display: block;
-        font-size: 7em;
-        margin-bottom: -30px;
-        font-weight:500;
-    }
-    
-    .descr {
-        font-size: 1em;
-    }
-    /* *******************    ******************* */
-    #span-top-t, #span-left-t, #span-bottom-t, #span-right-t,
-    #span-top-m, #span-left-m, #span-bottom-m, #span-right-m {
-        visibility: hidden;
+    :root {
+        --MTB : 5%;
+        --MLR : 15%;
+        --ITSpace : 20px;
     }
 
-    #span-top, #span-left, #span-bottom, #span-right {
-        visibility: visible;
-        width: auto;
+/* ************ HOME ** */
+    .home_box {
+        font-size: 1rem;
     }
 
-    #span-left, #span-right {
-        width: 100%;
+    .icone img {
+        height: 20px;
     }
 
-    #span-top a, #span-left a, #span-bottom a, #span-right a {
-        font-size: 1em;
+/* ************ FOOTER ** */
+    .footer_left, .footer_right{
+        bottom: var(--MTB);
     }
 
-    #span-top {
-        top: 0;
-        transform: translateX(-50%);
+    .footer_left {
+        left: var(--MLR);
     }
-    #span-left {
-        left: -46%;
-        top: 45%;
-        transform:rotate(90deg);
+
+    .footer_right {
+        right: var(--MLR);
     }
-    #span-bottom {
-        bottom: 0;
-        transform: translateX(-50%);
-    
+
+/* ************ LOGO CENTER ** */
+    .logo_box{
+        font-size: 3rem;
     }
-    #span-right {
-        right: -46%;
-        top: 45%;
-        transform:rotate(-90deg);
+    .lt {
+        left: -50%;
     }
-    /* *******************    ******************* */
-    .span-key-img {
-        background: url(../assets/icones/key-up-down.svg);
-        width: 50px;
-        height: 50px;
-        margin: 10px auto;
-        opacity: 1;
-        transition: 0.3s ease;
+    .lb {
+        right: -50%;
     }
-    
-    .sk-bottom, .sk-top {
-        background: url(../assets/icones/key-up-down.svg);
-    }
-    .sk-bottom {
-        transform: rotate(180deg);
-    }
-    
-    .sk-left, .sk-right {
-        background: url(../assets/icones/key-left-right.svg);
-    }
-    /* *******************    ******************* */
-    .span-box {
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        
-        transition: 1s ease-out;
-        z-index: 2;
-    }
-    
-    .sb-left {
-    
-        background-color: rgba(220, 20, 60, 0.658);
-        left: 0;
-        transform: translateX(-100vw);
-    }
-    
-    .sb-right {
-    
-        background-color: rgba(20, 220, 97, 0.658);
-        right: 0;
-        transform: translateX(100vw);
-    }
-    
-    
 
 }
