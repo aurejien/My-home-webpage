@@ -1,3 +1,32 @@
+<?php
+if ($_SERVER['REQUEST_METHOD']=='POST') {
+    
+    $name    = htmlentities($_POST['name']);
+    $email   = htmlentities($_POST['email']);
+    $message = htmlentities($_POST['message']);
+    
+    $destinataire = 'hello@aurelienj.com'; // Adresse email du webmaster (à personnaliser)
+    $sujet = 'Message from AURELIENJ'; // Titre de l'email
+    $contenu = '<html><head><title>Titre du message</title></head><body>';
+    $contenu .= '<p><strong>Nom</strong>: '.$name.'</p>';
+    $contenu .= '<p><strong>Email</strong>: '.$email.'</p>';
+    $contenu .= '<p><strong>Message</strong>: '.$message.'</p>';
+    $contenu .= '</body></html>'; 
+
+    $headers = 'MIME-Version: 1.0'."\r\n";
+    $headers .= 'Content-type: text/html; charset=iso-8859-1'."\r\n";
+    
+    mail($destinataire, $sujet, $contenu, $headers); // Fonction principale qui envoi l'email
+    echo '
+    <script type="text/javascript">
+    alert("MESSSSAGE SENNNDDD");
+    </script>';
+    
+    $nom = $email = $message = NULL;
+    unset($_POST);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,7 +85,16 @@
         <!-- ----------------- -->
         <div class="about_box box"></div>
         <!-- ----------------- -->
-        <div class="contact_box box"></div>
+        <div class="contact_box box">
+            <div class="form_box">
+                <form method="POST" action="">
+                    <input type="text" id="name" name="name" placeholder="Your name.." required >
+                    <input type="email" id="email" name="email" placeholder="Your email.." required >
+                    <textarea id="message" name="message" placeholder="Your text.." required ></textarea>
+                    <input type="submit" id="submit" value="Submit">
+                </form>
+            </div>
+        </div>
         <!-- ----------------- -->
     </div>
         <!-- ----------------- -->

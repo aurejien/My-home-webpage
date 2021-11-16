@@ -25,9 +25,9 @@
 :root {
     --black : rgb(20, 20, 20);
     --white : rgb(255, 255, 255);
+    --hoverColor : rgb(0, 255, 170) ;
 
 }
-
 * {
     box-sizing: border-box;
     text-decoration: none;
@@ -36,7 +36,6 @@
     padding: 0;
 
 }
-
 body {
     background-color: var(--black);
     width: 100%;
@@ -51,7 +50,6 @@ body {
     text-align: center;
     position: relative;
 }
-
 .home_box {
     position: relative;
     width: 100%;
@@ -59,41 +57,36 @@ body {
     margin: auto;
     overflow: hidden;
 }
-
 .kursor {
     cursor: pointer;
 }
-
 .nav {
     position: relative;
     top: var(--MRG);
     z-index: 10;
 }
-
 /* ************ NAV BAR TOP ** */
 .logo, .nav_bar {
     position: absolute;
 }
-
 .logo {
     font-family: "Bold";
 }
-
 .nav_item {
     display: inline;
     margin: 0 var(--ITSpace);
     border-bottom: 1px solid rgba(255, 255, 255, 0);
-    
 }
-
 .item_1 a:hover, .item_2 a:hover, .item_3 a:hover {
     border-bottom: 1px solid var(--white);
 }
-
-
-
+.logo a:active, .item_1 a:active, .item_2 a:active, .item_3 a:active {
+    border-bottom: 1px solid var(--hoverColor);
+    color: var(--hoverColor);
+}
 /* ************ LOGO CENTER ** */
 .logo_box{
+    visibility: visible;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -101,18 +94,15 @@ body {
     font-family: "Bold";
     overflow: visible;
 }
-
 .lt, .lc, .lb {
     position: relative;
 }
-
 .lt {
     left: -50%;
 }
 .lb {
     right: -50%;
 }
-
 /* ************ FOOTER ** */
 .footer_left, .footer_right{
     position: absolute;
@@ -120,39 +110,75 @@ body {
 .footer_right{
     z-index: 10;
 }
-
 .footer_right .icone {
     display: inline;
 }
-
 .icone img {
     margin: 0 var(--ITSpace);
 }
-
 /* ************ CONTACT ** */
 .box {
-    background-color: crimson;
     position: absolute;
     width: 100%;
     height: 100vh;
     z-index: 2;
+    text-align: center;
     transition: 0.5s ease-in;
 }
-
 .project_box {
+    background-color: var(--black);
     top: 0;
     left: -100%;
 }
 .about_box {
+    background-color: var(--black);
     top: 0;
     left: 100%;
 }
-
 .contact_box {
     top: 100%;
     left: 0;
 }
-
+/* ************ FORM ** */
+.form_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 60%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+    color: var(--black);
+    background: var(--hoverColor);
+    border-bottom-color: var(--hoverColor);
+}
+input, textarea {
+    width: 100%;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    outline: none ;
+    margin: 0 auto 2% auto;
+    display: block;
+    border: none;
+    border-bottom: 1px solid var(--white);
+    background-color: var(--black);
+    color: var(--white);
+}
+textarea {
+    height: 200px;
+}
+input[id="submit"] {
+    opacity: 1;
+    width: 70%;
+    cursor: pointer;
+}
+input[id="submit"]:hover {
+    color: var(--black);
+    background: var(--hoverColor);
+    border-bottom-color: var(--hoverColor);
+}
 
 
 

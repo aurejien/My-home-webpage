@@ -51,4 +51,11 @@
     .lb {
         right: -40%;
     }
+    .form_box {
+    width: 50%;
+}
+/* ************ FORM ** */
+.form_box {
+    width: 70%;
+}
 }
