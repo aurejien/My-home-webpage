@@ -22,10 +22,14 @@
     }
 
     .nav_bar {
-        top: 10%;
+        text-align: center;
+        width: 100%;
+        top: 30px;
+        left: 0;
     }
 
-    .logo, .nav_bar {
+    .logo {
+        top: 0;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -39,8 +43,9 @@
     }
 
     .footer_left, .footer_right {
-        left: 50%;
-        transform: translateX(-50%);
+        text-align: center;
+        width: 100%;
+        left: 0;
     }
 /* ************ LOGO CENTER ** */
     .logo_box{

@@ -17,6 +17,10 @@
         height: 15px;
     }
 
+    .logo, .nav_bar {
+        top: 0;
+    }
+    
     .logo {
         left: var(--MRG);
     }

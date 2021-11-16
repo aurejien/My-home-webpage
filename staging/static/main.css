@@ -34,7 +34,6 @@
     color: var(--white);
     margin: 0;
     padding: 0;
-    overflow: hidden;
 
 }
 
@@ -43,6 +42,7 @@ body {
     width: 100%;
     height: 100vh;
     font-family: "Light", sans-serif;
+    overflow: hidden;
 }
 /* *******************    ******************* */
 .box {
@@ -57,13 +57,22 @@ body {
     width: 100%;
     height: 100%;
     margin: auto;
+    overflow: hidden;
+}
+
+.kursor {
+    cursor: pointer;
+}
+
+.nav {
+    position: relative;
+    top: var(--MRG);
+    z-index: 10;
 }
 
 /* ************ NAV BAR TOP ** */
 .logo, .nav_bar {
     position: absolute;
-    top: var(--MRG);
-    overflow: visible;
 }
 
 .logo {
@@ -74,12 +83,14 @@ body {
     display: inline;
     margin: 0 var(--ITSpace);
     border-bottom: 1px solid rgba(255, 255, 255, 0);
-    cursor: not-allowed;
+    
 }
 
-.nav_item:hover {
+.item_1 a:hover, .item_2 a:hover, .item_3 a:hover {
     border-bottom: 1px solid var(--white);
 }
+
+
 
 /* ************ LOGO CENTER ** */
 .logo_box{
@@ -102,12 +113,13 @@ body {
     right: -50%;
 }
 
-
 /* ************ FOOTER ** */
 .footer_left, .footer_right{
     position: absolute;
 }
-
+.footer_right{
+    z-index: 10;
+}
 
 .footer_right .icone {
     display: inline;
@@ -116,4 +128,47 @@ body {
 .icone img {
     margin: 0 var(--ITSpace);
 }
+
+/* ************ CONTACT ** */
+.box {
+    background-color: crimson;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    transition: 0.5s ease-in;
+}
+
+.project_box {
+    top: 0;
+    left: -100%;
+}
+.about_box {
+    top: 0;
+    left: 100%;
+}
+
+.contact_box {
+    top: 100%;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
