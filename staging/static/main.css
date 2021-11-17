@@ -139,6 +139,14 @@ body {
     top: 100%;
     left: 0;
 }
+/* ************ CENTER BOX ** */
+.center_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 /* ************ FORM ** */
 .form_box {
     position: absolute;
@@ -162,6 +170,7 @@ input, textarea {
     margin: 0 auto 2% auto;
     display: block;
     border: none;
+    border-radius: none;
     border-bottom: 1px solid var(--white);
     background-color: var(--black);
     color: var(--white);

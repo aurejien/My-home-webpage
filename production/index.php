@@ -30,7 +30,15 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TX4T2LP');
+    </script>
+<!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,6 +51,10 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
     <title>AURELIEN J | JUNIOR WEB DEVELOPER</title>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TX4T2LP"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <div class="home_box">
         <div class="nav">
             <div class="logo kursor"><a>AURELIEN J</a></div>
@@ -69,21 +81,13 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
         </div>
     
         <!-- ----------------- -->
-        <div class="project_box box">
-            <div class="center_box">
-                Comming Soon
-            </div>
-        </div>
+        <div class="project_box box"></div>
         <!-- ----------------- -->
-        <div class="about_box box">
-            <div class="center_box">
-                Comming Soon
-            </div>
-        </div>
+        <div class="about_box box"></div>
         <!-- ----------------- -->
         <div class="contact_box box">
             <div class="form_box">
-                <form  action="">
+                <form method="POST" action="">
                     <input type="text" id="name" name="name" placeholder="Your name.." required >
                     <input type="email" id="email" name="email" placeholder="Your email.." required >
                     <textarea id="message" name="message" placeholder="Your text.." required ></textarea>

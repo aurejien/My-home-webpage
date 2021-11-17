@@ -17,12 +17,15 @@
         height: 20px;
     }
 
-
+    .logo, .nav_bar {
+        top: 0;
+    }
+    
     .logo {
         left: var(--MRG);
     }
 
-    .nav_bar {
+    .nav_bar { 
         right: var(--MRG);
     }
 
@@ -40,14 +43,18 @@
     }
 
 /* ************ LOGO CENTER ** */
-    .logo_box{
-        font-size: 3rem;
-    }
-    .lt {
-        left: -50%;
-    }
-    .lb {
-        right: -50%;
-    }
+.logo_box{
+    font-size: 3rem;
+}
+.lt {
+    left: -50%;
+}
+.lb {
+    right: -50%;
+}
+/* ************ FORM ** */
+.form_box {
+    width: 50%;
+}
 
 }

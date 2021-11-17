@@ -5,6 +5,7 @@
 @media screen and (min-width: 768px) and  (max-width: 1023px){
     :root {
         --MRG : 5%;
+        --MRGT : 10%;
         --ITSpace : 10px;
     }
 
@@ -18,7 +19,7 @@
     }
 
     .logo, .nav_bar {
-        top: 0;
+        top: var(--MRGT);
     }
     
     .logo {
@@ -30,7 +31,7 @@
     }
 /* ************ FOOTER ** */
     .footer_left, .footer_right{
-        bottom: var(--MRG);
+        bottom: var(--MRGT);
     }
 
     .footer_left {
